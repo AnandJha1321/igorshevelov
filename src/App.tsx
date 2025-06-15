@@ -191,7 +191,7 @@ function App() {
                 <Dumbbell className="h-10 w-10 text-[#00ffae] group-hover:rotate-12 transition-transform duration-300" />
                 <div className="absolute inset-0 bg-[#00ffae]/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-300"></div>
               </div>
-              <span className="text-2xl font-bold text-white font-bayon tracking-wider">GYMPRO</span>
+              <span className="text-2xl font-bold text-white font-bayon tracking-wider">Igor Shevelov</span>
             </div>
             
             {/* Desktop Navigation */}
@@ -265,7 +265,7 @@ function App() {
                 </div>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight font-bayon">
                   <span className="block animate-slide-up" style={{ animationDelay: '200ms' }}>DISCOVER</span>
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#00ffae] to-[#00ffd2] animate-slide-up" style={{ animationDelay: '400ms' }}>GYMPRO</span>
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#00ffae] to-[#00ffd2] animate-slide-up" style={{ animationDelay: '400ms' }}>IGOR SHEVELOV</span>
                   <span className="block animate-slide-up" style={{ animationDelay: '600ms' }}>YOUR PATH TO</span>
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#ffd700] to-[#ffed4e] animate-slide-up" style={{ animationDelay: '800ms' }}>WELLNESS</span>
                 </h1>
@@ -374,7 +374,7 @@ function App() {
               <div className="relative overflow-hidden rounded-3xl">
                 <img 
                   src="https://images.pexels.com/photos/1552106/pexels-photo-1552106.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                  alt="About GymPro" 
+                  alt="About IGOR SHEVELOV" 
                   className="w-full h-[600px] object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-[#00ffae]/20 to-[#ffd700]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -389,7 +389,7 @@ function App() {
               <div>
                 <div className="flex items-center space-x-3 text-[#00ffae] mb-6">
                   <div className="w-12 h-0.5 bg-gradient-to-r from-[#00ffae] to-transparent"></div>
-                  <span className="text-sm font-bold tracking-[0.2em] font-bayon">ABOUT GYMPRO</span>
+                  <span className="text-sm font-bold tracking-[0.2em] font-bayon">ABOUT SHEVELOV</span>
                 </div>
                 <h2 className="text-5xl font-bold mb-8 font-bayon leading-tight">
                   Your Fitness Journey{' '}
@@ -398,7 +398,7 @@ function App() {
                   </span>
                 </h2>
                 <p className="text-gray-300 text-lg mb-8 font-urbanist leading-relaxed">
-                  At GymPro, we believe fitness is more than just physical exercise – it's a lifestyle transformation. 
+                  we believe fitness is more than just physical exercise – it's a lifestyle transformation. 
                   Our mission is to provide you with the tools, knowledge, and support needed to achieve your health and wellness goals.
                 </p>
               </div>
@@ -673,7 +673,7 @@ function App() {
           </div>
           
           <blockquote className="text-3xl md:text-4xl font-light text-gray-300 mb-12 leading-relaxed font-urbanist animate-fade-in">
-            "GymPro completely transformed my approach to fitness. The trainers are incredibly knowledgeable, 
+            "Shevelov completely transformed my approach to fitness. The trainers are incredibly knowledgeable, 
             and the community here is so supportive. I've achieved goals I never thought possible!"
           </blockquote>
           
@@ -778,7 +778,7 @@ function App() {
                   <Dumbbell className="h-10 w-10 text-[#00ffae] group-hover:rotate-12 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-[#00ffae]/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-300"></div>
                 </div>
-                <span className="text-2xl font-bold font-bayon tracking-wider">GYMPRO</span>
+                <span className="text-2xl font-bold font-bayon tracking-wider">Shevelov</span>
               </div>
               <p className="text-gray-400 font-urbanist leading-relaxed">
                 Your premier destination for fitness, health, and wellness transformation.
@@ -839,7 +839,7 @@ function App() {
                 </li>
                 <li className="flex items-center gap-3 text-gray-400 font-urbanist">
                   <Mail className="h-5 w-5 text-[#ffd700]" />
-                  <span>info@gympro.com</span>
+                  <span>info@shevelovtrainer.com</span>
                 </li>
               </ul>
             </div>
@@ -847,7 +847,7 @@ function App() {
 
           <div className="border-t border-white/10 pt-8 text-center">
             <p className="text-gray-400 font-urbanist">
-              &copy; 2024 GymPro. All rights reserved. | 
+              &copy; 2024 Igor Shevelov. All rights reserved. | 
               <a href="#" className="hover:text-[#00ffae] transition-colors duration-300 ml-2">Privacy Policy</a> | 
               <a href="#" className="hover:text-[#00ffae] transition-colors duration-300 ml-2">Terms of Service</a>
             </p>
