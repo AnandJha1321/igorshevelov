@@ -319,7 +319,7 @@ function App() {
         </div>
 
         {/* Scrolling Banner */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-[#00ffae] to-[#00ffd2] text-[#0a0f1c] py-4 overflow-hidden">
+        <div className="absolute bottom-[-20px] left-0 right-0 bg-gradient-to-r from-[#00ffae] to-[#00ffd2] text-[#0a0f1c] py-4 overflow-hidden">
           <div className="flex animate-scroll-fast whitespace-nowrap">
             {[...Array(3)].map((_, i) => (
               <div key={i} className="flex items-center">
