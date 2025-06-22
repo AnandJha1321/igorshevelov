@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { 
   Menu, 
   X, 
@@ -174,24 +174,24 @@ function App() {
   ];
 
   return (
-    <div className="bg-[#0a0f1c] text-white min-h-screen overflow-x-hidden">
+    <div className="bg-[#FE9400] text-white min-h-screen overflow-x-hidden">
       {/* Animated Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-[#00ffae]/5 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute top-96 right-20 w-96 h-96 bg-[#ffd700]/5 rounded-full blur-3xl animate-float-delayed"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-[#FE9400]/5 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute top-96 right-20 w-96 h-96 bg-[#FE9400]/5 rounded-full blur-3xl animate-float-delayed"></div>
         <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl animate-float-slow"></div>
       </div>
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0f1c]/90 backdrop-blur-xl border-b border-white/5">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#ffffff]/0 backdrop-blur-xl border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-3 group">
               <div className="relative">
-                <Dumbbell className="h-10 w-10 text-[#00ffae] group-hover:rotate-12 transition-transform duration-300" />
-                <div className="absolute inset-0 bg-[#00ffae]/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-300"></div>
+                <Dumbbell className="h-10 w-10 text-[#FFFFFF] group-hover:rotate-12 transition-transform duration-300" />
+                <div className="absolute inset-0 bg-[#FFFFFF] rounded-full blur-lg group-hover:blur-xl transition-all duration-300"></div>
               </div>
-              <span className="text-2xl font-bold text-white font-bayon tracking-wider">Igor Shevelov</span>
+              <span className="text-2xl font-bold text-white font-bayon tracking-wider">Indian Fitness Coach</span>
             </div>
             
             {/* Desktop Navigation */}
@@ -200,19 +200,19 @@ function App() {
                 <a 
                   key={item}
                   href={`#${item.toLowerCase()}`} 
-                  className="relative text-white hover:text-[#00ffae] transition-all duration-300 font-bayon text-sm tracking-wider group"
+                  className="relative text-white hover:text-[#FE9400] transition-all duration-300 font-bayon text-sm tracking-wider group"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   {item}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#00ffae] group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#FE9400] group-hover:w-full transition-all duration-300"></span>
                 </a>
               ))}
             </div>
 
             <div className="hidden md:block">
-              <button className="relative bg-gradient-to-r from-[#ffd700] to-[#ffed4e] text-[#0a0f1c] px-8 py-3 rounded-full font-bold font-bayon text-sm tracking-wider hover:shadow-2xl hover:shadow-[#ffd700]/25 transform hover:scale-105 transition-all duration-300 overflow-hidden group">
+              <button className="relative bg-gradient-to-r from-[#0E131A] to-[#192029] text-[#FFFFF] px-8 py-3 rounded-full font-bold font-bayon text-sm tracking-wider hover:shadow-2xl hover:shadow-[#ffd700]/25 transform hover:scale-105 transition-all duration-300 overflow-hidden group">
                 <span className="relative z-10">GET STARTED NOW</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#ffed4e] to-[#ffd700] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#0E131A] to-[#192029] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
             </div>
 
@@ -239,7 +239,7 @@ function App() {
               <a 
                 key={item}
                 href={`#${item.toLowerCase()}`} 
-                className="block text-white hover:text-[#00ffae] transition-colors font-bayon text-lg tracking-wider"
+                className="block text-white hover:text-[#FE9400] transition-colors font-bayon text-lg tracking-wider"
                 style={{ animationDelay: `${index * 50}ms` }}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -259,19 +259,19 @@ function App() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-slide-up">
               <div className="space-y-4">
-                <div className="flex items-center space-x-3 text-[#00ffae] animate-fade-in">
-                  <div className="w-12 h-0.5 bg-gradient-to-r from-[#00ffae] to-transparent animate-expand"></div>
+                <div className="flex items-center space-x-3 text-[#192029] animate-fade-in">
+                  <div className="w-12 h-0.5 bg-gradient-to-r from-[#192029] to-transparent animate-expand"></div>
                   <span className="text-sm font-bold tracking-[0.2em] font-bayon">FITNESS & GYM</span>
                 </div>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight font-bayon">
                   <span className="block animate-slide-up" style={{ animationDelay: '200ms' }}>DISCOVER</span>
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#00ffae] to-[#00ffd2] animate-slide-up" style={{ animationDelay: '400ms' }}>IGOR SHEVELOV</span>
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#192029] to-[#192029] animate-slide-up" style={{ animationDelay: '400ms' }}>Indian Fitness Coach</span>
                   <span className="block animate-slide-up" style={{ animationDelay: '600ms' }}>YOUR PATH TO</span>
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#ffd700] to-[#ffed4e] animate-slide-up" style={{ animationDelay: '800ms' }}>WELLNESS</span>
                 </h1>
               </div>
               
-              <p className="text-xl text-gray-300 max-w-lg font-urbanist leading-relaxed animate-fade-in" style={{ animationDelay: '1000ms' }}>
+              <p className="text-xl text-gray-100 max-w-lg font-urbanist leading-relaxed animate-fade-in" style={{ animationDelay: '1000ms' }}>
                 Transform your body and mind with our state-of-the-art facilities, expert trainers, and personalized fitness programs designed to help you achieve your goals.
               </p>
 
@@ -283,12 +283,12 @@ function App() {
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-[#ffed4e] to-[#ffd700] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
-                <button className="group relative border-2 border-[#00ffae] text-[#00ffae] px-10 py-4 rounded-full font-bold text-lg font-bayon tracking-wider hover:bg-[#00ffae] hover:text-[#0a0f1c] transition-all duration-300 overflow-hidden">
+                <button className="group relative border-2 border-[#FFFFFF] text-[#FFFFFF] px-10 py-4 rounded-full font-bold text-lg font-bayon tracking-wider hover:bg-[#ffed4e] hover:text-[#0a0f1c] transition-all duration-300 overflow-hidden">
                   <span className="relative z-10 flex items-center justify-center gap-3">
                     <Play className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
                     WATCH STORY
                   </span>
-                  <div className="absolute inset-0 bg-[#00ffae] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                  <div className="absolute inset-0 bg-[#ffffff] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                 </button>
               </div>
             </div>
@@ -306,12 +306,12 @@ function App() {
                 {/* Floating Stats */}
                 <div className="absolute -top-6 -right-6 bg-[#0a0f1c]/90 backdrop-blur-xl rounded-2xl p-4 border border-white/10 animate-float">
                   <div className="text-2xl font-bold text-[#ffd700] font-bayon">2.5K+</div>
-                  <div className="text-sm text-gray-300 font-urbanist">Happy Members</div>
+                  <div className="text-sm text-gray-200 font-urbanist">Happy Members</div>
                 </div>
                 
                 <div className="absolute -bottom-6 -left-6 bg-[#0a0f1c]/90 backdrop-blur-xl rounded-2xl p-4 border border-white/10 animate-float-delayed">
-                  <div className="text-2xl font-bold text-[#00ffae] font-bayon">50+</div>
-                  <div className="text-sm text-gray-300 font-urbanist">Expert Trainers</div>
+                  <div className="text-2xl font-bold text-white font-bayon">50+</div>
+                  <div className="text-sm text-gray-200 font-urbanist">Expert Trainers</div>
                 </div>
               </div>
             </div>
@@ -319,7 +319,7 @@ function App() {
         </div>
 
         {/* Scrolling Banner */}
-        <div className="absolute bottom-[-20px] left-0 right-0 bg-gradient-to-r from-[#00ffae] to-[#00ffd2] text-[#0a0f1c] py-4 overflow-hidden">
+        <div className="absolute bottom-[-80px] left-0 right-0 bg-gradient-to-r from-[#0E131A] to-[#192029] text-[#FFFFF] py-4 overflow-hidden">
           <div className="flex animate-scroll-fast whitespace-nowrap">
             {[...Array(3)].map((_, i) => (
               <div key={i} className="flex items-center">
@@ -347,19 +347,19 @@ function App() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24 bg-gradient-to-b from-[#0a0f1c] to-[#0f1419]">
+      <section className="pt-36 bg-[#fe9400]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-12">
             {stats.map((stat, index) => (
               <div key={index} className="text-center group animate-fade-in" style={{ animationDelay: `${index * 200}ms` }}>
                 <div className="relative mb-6">
-                  <stat.icon className="h-16 w-16 text-[#00ffae] mx-auto group-hover:scale-110 group-hover:rotate-12 transition-all duration-300" />
+                  <stat.icon className="h-16 w-16 text-[#FFFFFF] mx-auto group-hover:scale-110 group-hover:rotate-12 transition-all duration-300" />
                   <div className="absolute inset-0 bg-[#00ffae]/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                 </div>
                 <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ffd700] to-[#ffed4e] font-bayon mb-2 group-hover:scale-110 transition-transform duration-300">
                   {stat.number}
                 </div>
-                <div className="text-xl text-gray-300 font-urbanist">{stat.label}</div>
+                <div className="text-xl text-gray-200 font-urbanist">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -374,7 +374,7 @@ function App() {
               <div className="relative overflow-hidden rounded-3xl">
                 <img 
                   src="https://images.pexels.com/photos/1552106/pexels-photo-1552106.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                  alt="About IGOR SHEVELOV" 
+                  alt="About Indian Fitness Coach" 
                   className="w-full h-[600px] object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-[#00ffae]/20 to-[#ffd700]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -387,17 +387,17 @@ function App() {
             
             <div className="space-y-8 animate-slide-right">
               <div>
-                <div className="flex items-center space-x-3 text-[#00ffae] mb-6">
-                  <div className="w-12 h-0.5 bg-gradient-to-r from-[#00ffae] to-transparent"></div>
-                  <span className="text-sm font-bold tracking-[0.2em] font-bayon">ABOUT SHEVELOV</span>
+                <div className="flex items-center space-x-3 text-[#192029] mb-6">
+                  <div className="w-12 h-0.5 bg-gradient-to-r from-[#192029] to-transparent"></div>
+                  <span className="text-sm font-bold tracking-[0.2em] font-bayon">ABOUT Indian Fitness Coach</span>
                 </div>
                 <h2 className="text-5xl font-bold mb-8 font-bayon leading-tight">
                   Your Fitness Journey{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00ffae] to-[#00ffd2]">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#192029] to-[#192029]">
                     Starts Here
                   </span>
                 </h2>
-                <p className="text-gray-300 text-lg mb-8 font-urbanist leading-relaxed">
+                <p className="text-gray-100 text-lg mb-8 font-urbanist leading-relaxed">
                   we believe fitness is more than just physical exercise – it's a lifestyle transformation. 
                   Our mission is to provide you with the tools, knowledge, and support needed to achieve your health and wellness goals.
                 </p>
@@ -407,12 +407,12 @@ function App() {
                 <div className="group p-6 rounded-2xl bg-gradient-to-br from-gray-800/30 to-gray-900/30 border border-white/5 hover:border-[#ffd700]/30 transition-all duration-300">
                   <Trophy className="h-12 w-12 text-[#ffd700] mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300" />
                   <h3 className="font-bold text-xl mb-3 font-bayon">Award Winning</h3>
-                  <p className="text-gray-400 font-urbanist">Recognized for excellence in fitness and member satisfaction</p>
+                  <p className="text-gray-200 font-urbanist">Recognized for excellence in fitness and member satisfaction</p>
                 </div>
                 <div className="group p-6 rounded-2xl bg-gradient-to-br from-gray-800/30 to-gray-900/30 border border-white/5 hover:border-[#00ffae]/30 transition-all duration-300">
-                  <Activity className="h-12 w-12 text-[#00ffae] mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300" />
+                  <Activity className="h-12 w-12 text-[#FFFFFF] mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300" />
                   <h3 className="font-bold text-xl mb-3 font-bayon">Results Driven</h3>
-                  <p className="text-gray-400 font-urbanist">Proven methodologies and personalized approaches</p>
+                  <p className="text-gray-200 font-urbanist">Proven methodologies and personalized approaches</p>
                 </div>
               </div>
             </div>
@@ -421,21 +421,21 @@ function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-24 bg-gradient-to-b from-[#0f1419] to-[#0a0f1c]">
+      <section id="services" className="py-24 bg-gradient-to-b from-[#fe9400]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="flex items-center justify-center space-x-3 text-[#00ffae] mb-6">
-              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#00ffae] to-transparent"></div>
+            <div className="flex items-center justify-center space-x-3 text-[#0E131A] mb-6">
+              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#0E131A] to-transparent"></div>
               <span className="text-sm font-bold tracking-[0.2em] font-bayon">OUR SERVICES</span>
-              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#00ffae] to-transparent"></div>
+              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#0E131A] to-transparent"></div>
             </div>
             <h2 className="text-5xl font-bold mb-8 font-bayon">
               Transform Your{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00ffae] to-[#00ffd2]">
-                Fitness Journey
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0E131A] to-[#192029]">
+                Fitness Journey 
               </span>
             </h2>
-            <p className="text-gray-300 text-xl max-w-3xl mx-auto font-urbanist leading-relaxed">
+            <p className="text-gray-200 text-xl max-w-3xl mx-auto font-urbanist leading-relaxed">
               Choose from our comprehensive range of fitness services designed to meet your unique goals and preferences.
             </p>
           </div>
@@ -458,10 +458,10 @@ function App() {
                 </div>
                 
                 <div className="p-8 space-y-6">
-                  <h3 className="text-2xl font-bold font-bayon group-hover:text-[#00ffae] transition-colors duration-300">
+                  <h3 className="text-2xl font-bold font-bayon group-hover:text-[#ffed4e] transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-gray-300 font-urbanist leading-relaxed">{service.description}</p>
+                  <p className="text-gray-200 font-urbanist leading-relaxed">{service.description}</p>
                   <button className="group/btn relative text-[#ffd700] font-bold font-bayon tracking-wider hover:text-[#ffed4e] transition-colors duration-300 flex items-center gap-3">
                     {service.cta}
                     <ArrowRight className="h-5 w-5 group-hover/btn:translate-x-2 transition-transform duration-300" />
@@ -478,10 +478,10 @@ function App() {
       <section id="pricing" className="py-24 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="flex items-center justify-center space-x-3 text-[#00ffae] mb-6">
-              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#00ffae] to-transparent"></div>
+            <div className="flex items-center justify-center space-x-3 text-[#192029] mb-6">
+              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#192029] to-transparent"></div>
               <span className="text-sm font-bold tracking-[0.2em] font-bayon">MEMBERSHIP PLANS</span>
-              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#00ffae] to-transparent"></div>
+              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#192029] to-transparent"></div>
             </div>
             <h2 className="text-5xl font-bold mb-8 font-bayon">
               Choose Your{' '}
@@ -489,7 +489,7 @@ function App() {
                 Perfect Plan
               </span>
             </h2>
-            <p className="text-gray-300 text-xl max-w-3xl mx-auto font-urbanist leading-relaxed">
+            <p className="text-gray-200 text-xl max-w-3xl mx-auto font-urbanist leading-relaxed">
               Flexible membership options designed to fit your lifestyle and budget.
             </p>
           </div>
@@ -507,7 +507,7 @@ function App() {
               >
                 {plan.featured && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 animate-pulse">
-                    <span className="bg-gradient-to-r from-[#00ffae] to-[#00ffd2] text-[#0a0f1c] px-6 py-2 rounded-full text-sm font-bold font-bayon tracking-wider">
+                    <span className="bg-gradient-to-r from-[#0a0f1c] to-[#192029] text-[#FFFFFF] px-6 py-2 rounded-full text-sm font-bold font-bayon tracking-wider">
                       MOST POPULAR
                     </span>
                   </div>
@@ -537,7 +537,7 @@ function App() {
                           plan.featured ? 'bg-[#ffd700]' : 'bg-[#00ffae]'
                         }`}></div>
                       </div>
-                      <span className="text-white font-urbanist group-hover/item:text-gray-300 transition-colors duration-300">
+                      <span className="text-white font-urbanist group-hover/item:text-gray-200 transition-colors duration-300">
                         {feature}
                       </span>
                     </li>
@@ -547,13 +547,13 @@ function App() {
                 <button className={`w-full py-4 rounded-2xl font-bold text-lg font-bayon tracking-wider transition-all duration-300 relative overflow-hidden group/btn ${
                   plan.featured 
                     ? 'bg-gradient-to-r from-[#ffd700] to-[#ffed4e] text-[#0a0f1c] hover:shadow-2xl hover:shadow-[#ffd700]/30' 
-                    : 'bg-gradient-to-r from-[#00ffae] to-[#00ffd2] text-[#0a0f1c] hover:shadow-2xl hover:shadow-[#00ffae]/30'
+                    : 'bg-gradient-to-r from-[#0E131A] to-[#192029] text-[#FFFFFF] hover:shadow-2xl hover:shadow-[#00ffae]/30'
                 }`}>
                   <span className="relative z-10">Choose Plan</span>
                   <div className={`absolute inset-0 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300 ${
                     plan.featured 
                       ? 'bg-gradient-to-r from-[#ffed4e] to-[#ffd700]' 
-                      : 'bg-gradient-to-r from-[#00ffd2] to-[#00ffae]'
+                      : 'bg-gradient-to-r from-[#0E131A] to-[#192029]'
                   }`}></div>
                 </button>
               </div>
@@ -563,21 +563,21 @@ function App() {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-gradient-to-b from-[#0a0f1c] to-[#0f1419]">
+      <section className="py-24 bg-gradient-to-b from-[#fe9400]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="flex items-center justify-center space-x-3 text-[#00ffae] mb-6">
-              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#00ffae] to-transparent"></div>
+            <div className="flex items-center justify-center space-x-3 text-[#0e131a] mb-6">
+              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#0e131a] to-transparent"></div>
               <span className="text-sm font-bold tracking-[0.2em] font-bayon">OUR TEAM</span>
-              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#00ffae] to-transparent"></div>
+              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#0e131a] to-transparent"></div>
             </div>
             <h2 className="text-5xl font-bold mb-8 font-bayon">
               Meet Our{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00ffae] to-[#00ffd2]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0E131A] to-[#0e131a]">
                 Expert Trainers
               </span>
             </h2>
-            <p className="text-gray-300 text-xl max-w-3xl mx-auto font-urbanist leading-relaxed">
+            <p className="text-gray-200 text-xl max-w-3xl mx-auto font-urbanist leading-relaxed">
               Our certified trainers are here to guide, motivate, and support you every step of the way.
             </p>
           </div>
@@ -602,19 +602,19 @@ function App() {
                   {/* Social Media Overlay */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <div className="bg-[#0a0f1c]/90 backdrop-blur-xl rounded-2xl p-4 border border-white/10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                      <div className="flex items-center gap-3 text-[#00ffae]">
+                      <div className="flex items-center gap-3 text-[#fffff]">
                         <Instagram className="h-5 w-5" />
                         <span className="font-urbanist text-sm">{trainer.social.instagram}</span>
                       </div>
-                      <div className="text-xs text-gray-400 font-urbanist mt-1">{trainer.social.followers} followers</div>
+                      <div className="text-xs text-gray-100 font-urbanist mt-1">{trainer.social.followers} followers</div>
                     </div>
                   </div>
                   
                   {/* Decorative Ring */}
-                  <div className="absolute inset-0 rounded-full border-2 border-[#00ffae]/20 group-hover:border-[#00ffae]/60 group-hover:scale-110 transition-all duration-500"></div>
+                  <div className="absolute inset-0 rounded-full border-2 border-[#FFFFF]/20 group-hover:border-[#ffd700] group-hover:scale-110 transition-all duration-500"></div>
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-2 font-bayon group-hover:text-[#00ffae] transition-colors duration-300">
+                <h3 className="text-2xl font-bold mb-2 font-bayon group-hover:text-[#ffd700] transition-colors duration-300">
                   {trainer.name}
                 </h3>
                 <p className="text-[#ffd700] font-bold font-urbanist">{trainer.specialty}</p>
@@ -628,10 +628,10 @@ function App() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="flex items-center justify-center space-x-3 text-[#00ffae] mb-6">
-              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#00ffae] to-transparent"></div>
+            <div className="flex items-center justify-center space-x-3 text-[#0E131A] mb-6">
+              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#0E131A] to-transparent"></div>
               <span className="text-sm font-bold tracking-[0.2em] font-bayon">WHY CHOOSE US</span>
-              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#00ffae] to-transparent"></div>
+              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#0E131A] to-transparent"></div>
             </div>
             <h2 className="text-5xl font-bold mb-8 font-bayon">
               World-Class{' '}
@@ -652,10 +652,10 @@ function App() {
                   <feature.icon className={`h-16 w-16 ${feature.color} mx-auto group-hover:scale-110 group-hover:rotate-12 transition-all duration-300`} />
                   <div className={`absolute inset-0 ${feature.color.replace('text-', 'bg-')}/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300`}></div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 font-bayon group-hover:text-[#00ffae] transition-colors duration-300">
+                <h3 className="text-2xl font-bold mb-4 font-bayon group-hover:text-[#0E131A] transition-colors duration-300">
                   {feature.title}
                 </h3>
-                <p className="text-gray-300 font-urbanist leading-relaxed">{feature.description}</p>
+                <p className="text-gray-200 font-urbanist leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -672,7 +672,7 @@ function App() {
             <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#00ffae] to-transparent"></div>
           </div>
           
-          <blockquote className="text-3xl md:text-4xl font-light text-gray-300 mb-12 leading-relaxed font-urbanist animate-fade-in">
+          <blockquote className="text-3xl md:text-4xl font-light text-gray-200 mb-12 leading-relaxed font-urbanist animate-fade-in">
             "Shevelov completely transformed my approach to fitness. The trainers are incredibly knowledgeable, 
             and the community here is so supportive. I've achieved goals I never thought possible!"
           </blockquote>
@@ -708,18 +708,18 @@ function App() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="flex items-center justify-center space-x-3 text-[#00ffae] mb-6">
-              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#00ffae] to-transparent"></div>
+            <div className="flex items-center justify-center space-x-3 text-[#0E131A] mb-6">
+              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#0E131A] to-transparent"></div>
               <span className="text-sm font-bold tracking-[0.2em] font-bayon">LATEST NEWS</span>
-              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#00ffae] to-transparent"></div>
+              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent via-[#0E131A] to-transparent"></div>
             </div>
             <h2 className="text-5xl font-bold mb-8 font-bayon">
               Fitness{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00ffae] to-[#00ffd2]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0E131A] to-[#192029]">
                 Insights
               </span>
             </h2>
-            <p className="text-gray-300 text-xl max-w-3xl mx-auto font-urbanist leading-relaxed">
+            <p className="text-gray-200 text-xl max-w-3xl mx-auto font-urbanist leading-relaxed">
               Stay updated with the latest fitness tips, nutrition advice, and wellness trends.
             </p>
           </div>
@@ -739,7 +739,7 @@ function App() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1c]/60 via-transparent to-transparent"></div>
                   <div className="absolute top-4 left-4">
-                    <span className="bg-[#00ffae] text-[#0a0f1c] px-3 py-1 rounded-full text-xs font-bold font-bayon tracking-wider">
+                    <span className="bg-[#0E131A] text-white px-3 py-1 rounded-full text-xs font-bold font-bayon tracking-wider">
                       {post.category}
                     </span>
                   </div>
@@ -752,10 +752,10 @@ function App() {
                 
                 <div className="p-8 space-y-6">
                   <div className="text-sm text-[#ffd700] font-bold font-urbanist">{post.date}</div>
-                  <h3 className="text-xl font-bold line-clamp-2 font-bayon group-hover:text-[#00ffae] transition-colors duration-300">
+                  <h3 className="text-xl font-bold line-clamp-2 font-bayon group-hover:text-[#ffed4e] transition-colors duration-300">
                     {post.title}
                   </h3>
-                  <p className="text-gray-300 line-clamp-3 font-urbanist leading-relaxed">{post.excerpt}</p>
+                  <p className="text-gray-200 line-clamp-3 font-urbanist leading-relaxed">{post.excerpt}</p>
                   <button className="group/btn text-[#ffd700] font-bold font-bayon tracking-wider hover:text-[#ffed4e] transition-colors duration-300 flex items-center gap-3">
                     Read More
                     <ArrowRight className="h-5 w-5 group-hover/btn:translate-x-2 transition-transform duration-300" />
@@ -775,12 +775,12 @@ function App() {
             <div className="space-y-6">
               <div className="flex items-center space-x-3 group">
                 <div className="relative">
-                  <Dumbbell className="h-10 w-10 text-[#00ffae] group-hover:rotate-12 transition-transform duration-300" />
+                  <Dumbbell className="h-10 w-10 text-[#FFFFFF] group-hover:rotate-12 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-[#00ffae]/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-300"></div>
                 </div>
-                <span className="text-2xl font-bold font-bayon tracking-wider">Shevelov</span>
+                <span className="text-2xl font-bold font-bayon tracking-wider">Indian Fitness Coach</span>
               </div>
-              <p className="text-gray-400 font-urbanist leading-relaxed">
+              <p className="text-gray-200 font-urbanist leading-relaxed">
                 Your premier destination for fitness, health, and wellness transformation.
               </p>
               <div className="flex space-x-4">
@@ -796,16 +796,16 @@ function App() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-6 text-[#00ffae] font-bayon">Quick Links</h3>
+              <h3 className="text-xl font-bold mb-6 text-[#ffed4e] font-bayon">Quick Links</h3>
               <ul className="space-y-3">
                 {['Home', 'About', 'Services', 'Pricing', 'Contact'].map((link, index) => (
                   <li key={link}>
                     <a 
                       href={`#${link.toLowerCase()}`} 
-                      className="text-gray-400 hover:text-[#00ffae] transition-colors duration-300 font-urbanist relative group"
+                      className="text-gray-200 hover:text-[#ffed4e] transition-colors duration-300 font-urbanist relative group"
                     >
                       {link}
-                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#00ffae] group-hover:w-full transition-all duration-300"></span>
+                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ffed4e] group-hover:w-full transition-all duration-300"></span>
                     </a>
                   </li>
                 ))}
@@ -813,13 +813,13 @@ function App() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-6 text-[#00ffae] font-bayon">Hours</h3>
+              <h3 className="text-xl font-bold mb-6 text-[#ffed4e] font-bayon">Hours</h3>
               <ul className="space-y-4">
-                <li className="flex items-center gap-3 text-gray-400 font-urbanist">
+                <li className="flex items-center gap-3 text-gray-200 font-urbanist">
                   <Clock className="h-5 w-5 text-[#ffd700]" />
                   <span>Mon-Fri: 5:00 AM - 11:00 PM</span>
                 </li>
-                <li className="flex items-center gap-3 text-gray-400 font-urbanist">
+                <li className="flex items-center gap-3 text-gray-200 font-urbanist">
                   <Clock className="h-5 w-5 text-[#ffd700]" />
                   <span>Sat-Sun: 6:00 AM - 10:00 PM</span>
                 </li>
@@ -827,27 +827,27 @@ function App() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-6 text-[#00ffae] font-bayon">Contact Info</h3>
+              <h3 className="text-xl font-bold mb-6 text-[#ffed4e] font-bayon">Contact Info</h3>
               <ul className="space-y-4">
-                <li className="flex items-start gap-3 text-gray-400 font-urbanist">
+                <li className="flex items-start gap-3 text-gray-200 font-urbanist">
                   <MapPin className="h-5 w-5 text-[#ffd700] flex-shrink-0 mt-0.5" />
                   <span>123 Fitness Street, Gym City, GC 12345</span>
                 </li>
-                <li className="flex items-center gap-3 text-gray-400 font-urbanist">
+                <li className="flex items-center gap-3 text-gray-200 font-urbanist">
                   <Phone className="h-5 w-5 text-[#ffd700]" />
                   <span>(555) 123-4567</span>
                 </li>
-                <li className="flex items-center gap-3 text-gray-400 font-urbanist">
+                <li className="flex items-center gap-3 text-gray-200 font-urbanist">
                   <Mail className="h-5 w-5 text-[#ffd700]" />
-                  <span>info@shevelovtrainer.com</span>
+                  <span>contact@indianfitness.com</span>
                 </li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-white/10 pt-8 text-center">
-            <p className="text-gray-400 font-urbanist">
-              &copy; 2024 Igor Shevelov. All rights reserved. | 
+            <p className="text-gray-200 font-urbanist">
+              &copy; 2025 Indian Fitness Coach. All rights reserved. | 
               <a href="#" className="hover:text-[#00ffae] transition-colors duration-300 ml-2">Privacy Policy</a> | 
               <a href="#" className="hover:text-[#00ffae] transition-colors duration-300 ml-2">Terms of Service</a>
             </p>
